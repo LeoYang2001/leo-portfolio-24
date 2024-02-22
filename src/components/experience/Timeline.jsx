@@ -41,8 +41,8 @@ const Timeline = ({experienceList, closeModal, openModal}) => {
 
   return (
     <div className='  w-full flex justify-center mt-10'>
-        <div  style={{color:'var(--title-color)'}} className='timelineContainer relative flex flex-col'>
-            <div ref={timelineRef} style={{width:2}} className='timeLine absolute bg-gray-500'>
+        <div  style={{color:'var(--title-color)'}} className='timelineContainer mb-10 relative flex flex-col'>
+            <div ref={timelineRef} style={{width:2}} className='timeLine absolute  bg-gray-500'>
                     {
                         timelineItemsHeight.map((item,index)=>(
                             <div 
