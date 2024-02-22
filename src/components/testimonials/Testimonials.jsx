@@ -50,7 +50,7 @@ const Testimonials = () => {
   return (
     <section style={{
       height: sectionHeight,
-      paddingTop:60
+      paddingTop:160
   }} className="testimonials section" id="testimonials">
         <h2 className="section__title">
        Testimonials
