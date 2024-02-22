@@ -1,0 +1,10 @@
+.testItem{
+    width: 350px;
+    height: 200px;
+    overflow-y: scroll;
+}
+.testHeader{
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
