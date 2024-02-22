@@ -1,0 +1,38 @@
+.contactItem{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.contactInput{
+    width: 350px;
+
+}
+
+.contactContainer{
+    width: 95% !important;
+}
+@media screen and (max-width: 790px) {
+    
+    .contactForm{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactItem{
+        position: relative;
+        width: 280px;
+        height: 200px;
+        overflow-y: scroll;
+        text-align: center;
+    }
+    
+    .contactInput{
+        width: 280px;
+        
+    }
+    
+  }
+  

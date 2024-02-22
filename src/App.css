@@ -302,8 +302,7 @@ img {
   min-width: 300px;
   z-index: 1001;
   position: fixed;
-  width: 30%;
-  height: 60%;
+  width: 20%;
   background-color: var(--container-color);
   border-radius: 20px;
   top: 50%;
@@ -345,3 +344,9 @@ img {
    
   } */
   
+.hoverItem{
+  transition: .2s;
+}
+  .hoverItem:hover{
+    filter: brightness(.4);
+  }

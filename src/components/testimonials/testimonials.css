@@ -1,8 +1,28 @@
 .testItem{
+    position: relative;
     width: 350px;
     height: 200px;
     overflow-y: scroll;
+    text-align: center;
 }
+.testItem::before {
+    cursor: pointer;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease; /* Add a transition effect */
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.testItem:hover::before {
+    background-color: rgba(0, 0, 0, 0.4); /* Faded-in background color */
+}
+
 .testHeader{
     position: sticky;
     top: 0;

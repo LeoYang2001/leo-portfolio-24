@@ -8,6 +8,7 @@ import Skill from './components/skills/Skill';
 import Experience from './components/experience/Experience';
 import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
+import Modal from './components/modal/Modal';
 
 
 function App() {
@@ -41,24 +42,15 @@ function App() {
     <div  ref={appRef} className="App">
        {ShowMenu && (<div onClick={closeMenu} style={{height:appHeight}}  className=' modal_nav bg-transparent-500'></div>)}
        {ShowModal && (<>
-        <div onClick={closeModal} style={{height:appHeight + 72}}  className=' absolute w-full modal'></div>
-        <div className='modalContent absolute bg-white w-40 h-40 flex flex-col gap-4 px-8 items-center'>
-          <header className='modalContentHeader'>
-          <span style={{color:'var(--title-color-dark)'}} className='modalTitle font-bold'>{modalContent.title}</span>
-          <span className='modalSubTitle'>{modalContent.subTitle}</span>
-          </header>
-          <p className='modalDes px-8' >
-            {modalContent.des}
-          </p>
-        </div>
+          <Modal closeModal={closeModal} modalContent={modalContent} />
        </>)}
       <Header ShowMenu={ShowMenu} closeMenu={closeMenu} openMenu = {openMenu} />
-      <main className='main'>
+      <main className='main flex flex-col mb-20'>
         <Home/>
         {/* <About/> */}
         <Skill/>
         <Experience ShowModal={ShowModal} openModal={openModal} closeModal={closeModal} />
-        <Testimonials/>
+        <Testimonials ShowModal={ShowModal} openModal={openModal} closeModal={closeModal} />
         <Contact/>
       </main>
     </div>

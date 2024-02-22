@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import TestiItem from './TestiItem'
 import './testimonials.css'
 
 
@@ -35,7 +36,7 @@ const testimonialsList = [
 
 
 
-const Testimonials = () => {
+const Testimonials = ({showModal, openModal, closeModal}) => {
     const containerRef = useRef(null)
     const [sectionHeight, setSectionHeight] = useState(0)
     useEffect(() => {
@@ -61,23 +62,7 @@ const Testimonials = () => {
       <div ref={containerRef} className="flex flex-wrap gap-20 justify-center px-20 pb-20">
             {
               testimonialsList.map((testItem, index)=>(
-                <div className='border testItem flex-col  rounded-xl bg-white'>
-                <div className='flex testHeader px-4 pt-4'>
-                <img style={{
-                    width:'3em',
-                    height:'3em'
-                }} className=' rounded-full mb-4' src={testItem.imgUrl} alt="" />
-                <div className=' h-full w-full justify-start items-center ml-4'>
-                <span  style={{color:'var(--title-color)'}} className="font-semibold block">{testItem.name}</span>
-                <span className='text-sm mb-4 block'>{testItem.company}</span>
-                </div>
-                </div>
-                <div className="px-4">
-                    <p>
-                      {testItem.reference}
-                    </p>
-                </div>
-            </div>
+                  <TestiItem showModal={showModal} openModal={openModal} testItem={testItem} />
               ))
             }
       </div>
