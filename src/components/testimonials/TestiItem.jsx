@@ -7,6 +7,7 @@ const TestiItem = ({testItem, openModal}) => {
         subTitle: name,
         des: reference
     }
+    
   return (
     <div onClick={()=>{openModal(modalItem)}} className='border testItem flex flex-col items-center justify-center rounded-xl bg-white'>
         <img style={{

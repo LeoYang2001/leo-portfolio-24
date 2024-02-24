@@ -9,6 +9,7 @@ import Experience from './components/experience/Experience';
 import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import Modal from './components/modal/Modal';
+import Project from './components/project/Project';
 
 
 function App() {
@@ -31,7 +32,6 @@ function App() {
 
   const openModal = (expItem)=>{
     setShowModal(true)
-    console.log(expItem);
     setModalContent(expItem)
     
   }
@@ -49,6 +49,7 @@ function App() {
         <Home/>
         {/* <About/> */}
         <Skill/>
+        <Project/>
         <Experience ShowModal={ShowModal} openModal={openModal} closeModal={closeModal} />
         <Testimonials ShowModal={ShowModal} openModal={openModal} closeModal={closeModal} />
         <Contact/>

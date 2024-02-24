@@ -38,21 +38,18 @@ const testimonialsList = [
 
 const Testimonials = ({showModal, openModal, closeModal}) => {
     const containerRef = useRef(null)
-    const [sectionHeight, setSectionHeight] = useState(0)
-    useEffect(() => {
-        setTimeout(()=>{
-            const containerHeight = containerRef.current.clientHeight
-            const windowHeight = window.innerHeight
-        setSectionHeight(containerHeight > windowHeight ? containerHeight : windowHeight)
+    // const [sectionHeight, setSectionHeight] = useState(0)
+    // useEffect(() => {
+    //     setTimeout(()=>{
+    //         const containerHeight = containerRef.current.clientHeight
+    //         const windowHeight = window.innerHeight
+    //     setSectionHeight(containerHeight > windowHeight ? containerHeight : windowHeight)
 
-        },0)
-    }, [])
+    //     },0)
+    // }, [])
 
   return (
-    <section style={{
-      height: sectionHeight,
-      paddingTop:160
-  }} className="testimonials section" id="testimonials">
+    <section className="testimonials section" id="testimonials">
         <h2 className="section__title">
        Testimonials
       </h2>

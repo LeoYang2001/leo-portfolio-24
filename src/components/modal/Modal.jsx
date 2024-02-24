@@ -4,14 +4,19 @@ const Modal = ({closeModal, modalContent}) => {
 
     const cardRatio = 2/3
     const [cardHeight, setCardHeight] = useState(0)
+
+    
     const ModalCard = useRef(null)
     useEffect(() => {
       setTimeout(()=>{
         setCardHeight(ModalCard.current.clientWidth / cardRatio)
+        
       },1)
-    }, [])
+    }, [modalContent.des])
     
     const {title, subTitle, des} = modalContent
+
+    
 
   return (
         <>
