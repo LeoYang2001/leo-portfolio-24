@@ -1,0 +1,10 @@
+.projectImg:hover img{
+    transform: scale(1.2);
+}
+.projectImg{
+    cursor: pointer;
+    overflow: hidden;
+}
+.projectImg img{
+    transition: .4s;
+}
