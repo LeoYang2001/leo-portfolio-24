@@ -6,7 +6,7 @@ import Social from './Social'
 
 const Home = () => {
 
-  const profileImg = "https://myprofilepicture-leoyang.s3.us-east-2.amazonaws.com/profileImage"
+  const profileImg = "https://myprofilepicture-leoyang.s3.us-east-2.amazonaws.com/profileImage.jpg"
 
   return (
     <section className="home section" id="home">
