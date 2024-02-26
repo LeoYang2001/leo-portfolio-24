@@ -8,3 +8,31 @@
 .projectImg img{
     transition: .4s;
 }
+
+
+
+
+
+  @media screen and (max-width: 1280px) {
+
+    .videoContainer video{
+        width: 40% !important;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .videoContainer video{
+        width: 50% !important;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .videoContainer video{
+        width: 70% !important;
+        border: 1px solid #ccc;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+   
+  }

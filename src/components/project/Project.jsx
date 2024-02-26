@@ -34,10 +34,10 @@ const Project = () => {
             {
               projectList.map((pro,index)=>(
                 <div  style={{width:'50%'}} className={`projectItem flex justify-center flex-wrap gap-10 mb-40`}>
-                <div style={{width:"40%", minWidth:300}}  className={`flex-1 flex justify-center projectImg ${index%2 == 0 ? '':'order-1'}`}>
+                <div style={{width:"30%", minWidth:300}}  className={`flex-1  flex videoContainer justify-center projectImg ${index%2 == 0 ? '':'order-1'}`}>
                 {
               pro.proVideoUrl ? (
-                <video   style={{width:"40%", minWidth:130}}  controls loop src={pro.proVideoUrl} className=" object-cover">
+                <video   style={{width:"50%", minWidth:130}}  controls loop src={pro.proVideoUrl} className=" object-contain">
                   <source src={pro.proVideoUrl} type="video/quicktime" />
                   Your browser does not support the video tag.
                 </video>

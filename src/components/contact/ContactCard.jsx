@@ -31,20 +31,13 @@ const ContactCard = ({contactItem}) => {
           >
             {/* FOR LAPTOP DEVICE  */}
             {
-              !isMobile && (
+              (
                 <div style={{opacity: ifHover ? 1 : 0 }} className=' absolute w-full h-full contactMask'>
                   <ClipBoard iconSize={32} color={"#fff"} ifCopied={ifCopy}/>
               </div>
               )
             }
-            {/* FOR MOBILE DEVICE  */}
-            {
-              isMobile && (
-                 <div style={{width:20, height:20}} className=' absolute right-2 top-2'>
-                   <ClipBoard iconSize={20} color={"#0f0f0f"} ifCopied={ifCopy}/>
-                  </div>
-              )
-            }
+           
 
             {contactItem.iconSvg}
               <h2>{contactItem.contactMethod}</h2>

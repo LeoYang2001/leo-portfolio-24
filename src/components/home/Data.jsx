@@ -60,8 +60,7 @@ const Data = () => {
             FullStack Developer
         </h3>
         <p className="home__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Dignissimos exercitationem incidunt ullam error molestias consectetur hic nam quidem.  
+        Passionate international student from China. Initially a Mechanical Engineering major, my pivotal moment came with the development of my skills in coding. This led me to relocate to the U.S. and pursue a career in Computer Science.
         </p>
         <a download="" href={'https://myprofilepicture-leoyang.s3.us-east-2.amazonaws.com/leo-resume.pdf'} className="button button--flex">
             Download CV
