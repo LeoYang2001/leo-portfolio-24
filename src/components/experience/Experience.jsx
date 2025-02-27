@@ -1,92 +1,108 @@
-import React from 'react'
-import '../about/about.css'
-import Timeline from './Timeline';
+import React from "react";
+import "../about/about.css";
+import Timeline from "./Timeline";
 
-const Experience = ({openModal, closeModal, ShowModal}) => {
-
-   const  experienceList = [
-      {
-          title:'Tianjin Polytech University',
-          subTitle:"Mechanical Engineering",
-          period:{
-              startTime:{
-                  year:2019,
-                  month:9
-              },
-              endTime:{
-                  year:2022,
-                  month:6
-              }
-          },
-          des:``
+const Experience = ({ openModal, closeModal, ShowModal }) => {
+  const experienceList = [
+    {
+      title: "University of Kentucky",
+      subTitle: "Computer Science",
+      period: {
+        startTime: {
+          year: 2022,
+          month: 8,
+        },
       },
-      {
-          title:'University of Kentucky',
-          subTitle:"Computer Science",
-          period:{
-              startTime:{
-                  year:2022,
-                  month:8
-              }
-          }
+    },
+    {
+      title: "Kentucky Energy And Envionment Cabinet",
+      subTitle: "Software intern",
+      period: {
+        startTime: {
+          year: 2023,
+          month: 5,
+        },
+        endTime: {
+          year: 2024,
+          month: 12,
+        },
       },
-      {
-          title:'Kentucky Energy And Envionment Cabinet',
-          subTitle:"Software intern",
-          period:{
-              startTime:{
-                  year:2023,
-                  month:5
-              },
-              endTime:{
-               year:2023,
-               month:12
-           }
-          },
-          des:`During my internship at the Energy & Environment Cabinet, I honed
-          skills in Leaflet for interactive mapping and ASP.NET MVC project development, deepening
-          my grasp of software architecture and programming. Additionally, I gained valuable
-          experience in Oracle database management, experiencing the utilization of PL/SQL to
-          enhance my understanding of database systems and contribute to efficient data
-          management practices.`
+      des: `During my three-term internship with the Energy & Environment Cabinet, I gained experience in Leaflet for interactive mapping and ASP.NET
+MVC development. I also developed Python scripts for web scraping, automating data formatting in Excel, and syncing local files to Box daily,
+enhancing data accessibility and automation skills`,
+    },
+    {
+      title: "University of Kentucky",
+      subTitle: "Ios developer",
+      period: {
+        startTime: {
+          year: 2024,
+          month: 1,
+        },
+        endTime: {
+          year: 2024,
+          month: 5,
+        },
       },
-      {
-         title:'University of Kentucky',
-         subTitle:"Ios developer",
-         period:{
-             startTime:{
-                 year:2024,
-                 month:1
-             }
-         },
-         des:`I collaborate with a professor on an iOS sports prediction app for University of Kentucky
-         students, focusing on real-time games from leagues like NBA, NFL, NCAA. The project uses
-         Swift for frontend and AWS for backend. While Toptal professionals handle major tasks, I
-         master and implement technologies, contributing to ongoing app maintenance. This
-         experience highlights my adaptability, collaboration, and active involvement in a researchdriven mobile app development initiative.`
-     }
-  ]
-
-      
+      des: `I collaborate with a professor on an iOS sports prediction app for UK students, using Swift for the frontend and AWS for the backend. While
+Toptal professionals lead development, I contribute to technology implementation and app maintenance.`,
+    },
+    {
+      title: "University of Kentucky Computational Science",
+      subTitle: "ACCESS Research Assistant",
+      period: {
+        startTime: {
+          year: 2024,
+          month: 8,
+        },
+        endTime: {
+          year: 2025,
+          month: 1,
+        },
+      },
+      des: `Researched AI APIs from open-source platforms like Hugging Face, evaluating functionalities, integration strategies, and practical applications.
+Investigated Retrieval-Augmented Generation (RAG) models to enhance AI-driven information retrieval and documented findings in structured
+reports to support AI model selection and deployment.`,
+    },
+    {
+      title: "University of Kentucky Biological Science",
+      subTitle: "React Native Developer",
+      period: {
+        startTime: {
+          year: 2024,
+          month: 9,
+        },
+      },
+      des: `Developing a full-stack mobile app for the Biological Science Center to manage salamander inventory, research orders, and daily maintenance
+tasks like feeding and cleaning axolotls. The app streamlines order tracking, automates inventory updates, and enhances workflow efficiency by
+integrating a database for seamless record-keeping and regulatory compliance.`,
+    },
+  ];
 
   return (
-   <section className="about section" id="experience">
-    <h2 className="section__title">
-        Experience
-      </h2>
-      <span className="section__subtitle">
-        My journey
-      </span>
+    <section className="about section" id="experience">
+      <h2 className="section__title">Experience</h2>
+      <span className="section__subtitle">My journey</span>
       <main>
-         <div className='flex justify-center gap-4'>
-            <span style={{color:'var(--title-color)'}} className=' font-bold text-2xl'>Education & Work</span>
-         </div>
-         <section>
-            <Timeline ShowModal={ShowModal} openModal={openModal} closeModal={closeModal} experienceList={experienceList}/>
-         </section>
+        <div className="flex justify-center gap-4">
+          <span
+            style={{ color: "var(--title-color)" }}
+            className=" font-bold text-2xl"
+          >
+            Education & Work
+          </span>
+        </div>
+        <section>
+          <Timeline
+            ShowModal={ShowModal}
+            openModal={openModal}
+            closeModal={closeModal}
+            experienceList={experienceList}
+          />
+        </section>
       </main>
-   </section>
-  )
-}
+    </section>
+  );
+};
 
-export default Experience
+export default Experience;

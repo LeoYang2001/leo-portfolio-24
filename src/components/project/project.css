@@ -1,38 +1,26 @@
-.projectImg:hover img{
-    transform: scale(1.2);
-}
-.projectImg{
-    cursor: pointer;
-    overflow: hidden;
-}
-.projectImg img{
-    transition: .4s;
+.projectImg {
+  cursor: pointer;
+  overflow: hidden;
 }
 
-
-
-
-
-  @media screen and (max-width: 1280px) {
-
-    .videoContainer video{
-        width: 40% !important;
-    }
+@media screen and (max-width: 1280px) {
+  .videoContainer video {
+    width: 40% !important;
   }
-  
-  @media screen and (max-width: 1000px) {
-    .videoContainer video{
-        width: 50% !important;
-    }
+}
+
+@media screen and (max-width: 1000px) {
+  .videoContainer video {
+    width: 50% !important;
   }
-  
-  @media screen and (max-width: 700px) {
-    .videoContainer video{
-        width: 70% !important;
-        border: 1px solid #ccc;
-    }
+}
+
+@media screen and (max-width: 700px) {
+  .videoContainer video {
+    width: 70% !important;
+    border: 1px solid #ccc;
   }
-  
-  @media screen and (max-width: 350px) {
-   
-  }
+}
+
+@media screen and (max-width: 350px) {
+}
